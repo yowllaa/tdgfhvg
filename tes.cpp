@@ -72,27 +72,6 @@ void cetakTiket(const Peserta& peserta) {
     cout << "Harap datang 30 menit sebelum acara dimulai.\n";
 }
 
-void bayarTiket(Peserta& peserta) {
-    const int hargaPerTiket = 50000;
-    int totalBayar = hargaPerTiket * peserta.jumlahTiket;
-
-    cout << "\n=== Pembayaran Tiket ===\n";
-    cout << "Nama: " << peserta.nama << endl;
-    cout << "Jumlah Tiket: " << peserta.jumlahTiket << endl;
-    cout << "Total Bayar: Rp" << totalBayar << endl;
-
-    char konfirmasi;
-    cout << "Lanjutkan pembayaran? (y/n): ";
-    cin >> konfirmasi;
-
-    if (konfirmasi == 'y' || konfirmasi == 'Y') {
-        cout << "Pembayaran berhasil!\n";
-        cetakTiket(peserta);
-    } else {
-        
-    }
-}
-
 void inputData(Peserta* peserta, int index) {
     cout << "\nMasukkan data peserta " << "\n";
     cout << "Nama: ";
